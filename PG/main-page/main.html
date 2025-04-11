@@ -1,172 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    
-<header>
-    <h1>Welcome to GreenMart</h1>
+
+    <header>
+        <h1>Welcome to GreenMart</h1>
         <div class="search-bar">
             <input type="text" id="search-input" placeholder="Search products...">
-                <button onclick="searchProducts()">Search</button>
+            <button onclick="searchProducts()">Search</button>
         </div>
-    <nav class="category-nav">
-        <button class="category-btn" data-category="dairy">Dairy Products</button>
-        <button class="category-btn" data-category="beverages">Beverages</button>
-        <button class="category-btn" data-category="snacks">Snacks</button>
-        <button class="category-btn" data-category="produce">Fruits & Veggies</button>
-        <button class="category-btn" data-category="frozen">Frozen Food</button>
-    </nav>
- 
-</header>
+        <nav class="category-nav">
+            <button class="category-btn" data-category="dairy">Dairy Products</button>
+            <button class="category-btn" data-category="beverages">Beverages</button>
+            <button class="category-btn" data-category="snacks">Snacks</button>
+            <button class="category-btn" data-category="produce">Fruits & Veggies</button>
+            <button class="category-btn" data-category="frozen">Frozen Food</button>
+        </nav>
 
-<div class="products-grid">
-    <div class="product-card" data-category="dairy">
-        <h3>Organic Milk</h3>
-        <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\MILK2.jfif" alt="Organic Milk" style="width: 200px; height: 200px;">
-        <p>Fresh organic milk - 1L</p>
-        <p>Price: ₹80</p>
-        <button onclick="addToCart('Organic Milk')">Add to Cart</button>
+    </header>
+
+    <div class="products-grid">
+        <div class="product-card" data-category="dairy">
+            <h3>ORGANIC MILK</h3>
+            <img src="../main-page/pics/milk.jfif" alt="Organic Milk" style="width: 200px; height: 200px;">
+            <p>Fresh Organic Milk - 1L</p>
+            <p>Price: ₹80</p>
+            <button onclick="addToCart('Organic Milk')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="dairy">
+            <h3>EGGS</h3>
+            <img src="../main-page/pics/egg.jfif" alt="Eggs" style="width: 200px; height: 200px;">
+            <p>Farm Fresh Eggs - 12 pcs</p>
+            <p>Price: ₹60</p>
+            <button onclick="addToCart('Eggs')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="dairy">
+            <h3>PANEER</h3>
+            <img src="../main-page/pics/paneer.jfif" alt="Paneer" style="width: 200px; height: 200px;">
+            <p>Fresh Paneer - 200g</p>
+            <p>Price: ₹100</p>
+            <button onclick="addToCart('Paneer')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="dairy">
+            <h3>LASSI</h3>
+            <img src="../main-page/pics/lassi.jfif" alt="Lassi" style="width: 200px; height: 200px;">
+            <p>Refreshing Lassi - 500ml</p>
+            <p>Price: ₹50</p>
+            <button onclick="addToCart('Lassi')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="dairy">
+            <h3>BUTTERMILK</h3>
+            <img src="../main-page/pics/buttermilk.jfif" alt="Buttermilk" style="width: 200px; height: 200px;">
+            <p>Cold Buttermilk - 500ml</p>
+            <p>Price: ₹40</p>
+            <button onclick="addToCart('Buttermilk')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="beverages">
+            <h3>MINERAL WATER</h3>
+            <img src="../main-page/pics/waterbottle.jfif" alt="MINERAL WATER" style="width: 200px; height: 200px;">
+            <p>Fresh Mineral Water</p>
+            <p>Price: ₹15/Bottle</p>
+            <button onclick="addToCart('FRESH MINERAL WATER')">Add to Cart</button>
+        </div>
+
+
+        <div class="product-card" data-category="beverages">
+            <h3>COKE</h3>
+            <img src="../main-page/pics/coke.jfif" alt="COKE" style="width: 200px; height: 200px;">
+            <p>Refreshing Coke</p>
+            <p>Price: ₹30/Can</p>
+            <button onclick="addToCart('COKE')">Add to Cart</button>
+        </div>
+
+
+        <div class="product-card" data-category="beverages">
+            <h3>SODA</h3>
+            <img src="../main-page/pics/soda.jfif" alt="SODA" style="width: 200px; height: 200px;">
+            <p>Refreshing Soda </p>
+            <p>Price: ₹15/Bottle</p>
+            <button onclick="addToCart('GOLI-SODA')">Add to Cart</button>
+        </div>
+
+
+        <div class="product-card" data-category="beverages">
+            <h3>COFFEE BEANS</h3>
+            <img src="../main-page/pics/coffee.jfif" alt="COFFEE" style="width: 200px; height: 200px;">
+            <p>Pure Coffee Beans</p>
+            <p>Price: ₹50/KG</p>
+            <button onclick="addToCart('COFFEE-BEANS')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="produce">
+            <h3>FRESH APPLES</h3>
+            <img src="../main-page/pics/apple.jfif" alt="FRESHAPPLES"        style="width: 200px; height: 200px;">
+            <p>Organic Kashmiri Apples</p>
+            <p>Price: ₹120/KG</p>
+            <button onclick="addToCart('Fresh Apples')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="produce">
+            <h3>MANGOES</h3>
+            <img src="../main-page/pics/mango.jfif" alt="MANGOES"
+                style="width: 200px; height: 200px;">
+            <p>Fresh Exotic Mangoes</p>
+            <p>Price: ₹150/KG</p>
+            <button onclick="addToCart('Fresh MANGOES')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="produce">
+            <h3>ORANGE</h3>
+            <img src="../main-page/pics/oranges.jfif" alt="ORANGES"
+                style="width: 200px; height: 200px;">
+            <p>Fresh Oranges</p>
+            <p>Price: ₹60/KG</p>
+            <button onclick="addToCart('ORANGES')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="produce">
+            <h3>BANANA</h3>
+            <img src="../main-page/pics/banana.jpg" alt="BANANA"
+                style="width: 200px; height: 200px;">
+            <p>Fresh Bananas</p>
+            <p>Price: ₹60/KG</p>
+            <button onclick="addToCart('BANANA')">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-category="produce">
+            <h3>POMOGRANATE</h3>
+            <img src="../main-page/pics/pomegranate.jfif" alt="Pomegranate"
+                style="width: 200px; height: 200px;">
+            <p>Fresh Pomegranate</p>
+            <p>Price: ₹50/KG</p>
+            <button onclick="addToCart('Pomegranate')">Add to Cart</button>
+        </div>
     </div>
-    
-    <div class="product-card" data-category="dairy">
-        <h3>Eggs</h3>
-        <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\egg.jfif" alt="Eggs" style="width: 200px; height: 200px;">
-        <p>Farm fresh eggs - 12 pcs</p>
-        <p>Price: ₹60</p>
-        <button onclick="addToCart('Eggs')">Add to Cart</button>
-    </div>
-    
-    <div class="product-card" data-category="dairy">
-        <h3>Paneer</h3>
-        <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\paneer.jfif" alt="Paneer" style="width: 200px; height: 200px;">
-        <p>Fresh paneer - 200g</p>
-        <p>Price: ₹100</p>
-        <button onclick="addToCart('Paneer')">Add to Cart</button>
-    </div>
-    
-    <div class="product-card" data-category="dairy">
-        <h3>Lassi</h3>
-        <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\lassi.jfif" alt="Lassi" style="width: 200px; height: 200px;"> 
-        <p>Refreshing lassi - 500ml</p>
-        <p>Price: ₹50</p>
-        <button onclick="addToCart('Lassi')">Add to Cart</button>
-    </div>
-    
-    <div class="product-card" data-category="dairy">
-        <h3>Buttermilk</h3>
-        <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\buttermilk.jfif" alt="Buttermilk" style="width: 200px; height: 200px;">
-        <p>Cool buttermilk - 500ml</p>
-        <p>Price: ₹40</p>
-        <button onclick="addToCart('Buttermilk')">Add to Cart</button>
-    </div>
-    
-    <div class="product-card" data-category="beverages">
-        <h3>Green Tea</h3>
-         <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\green tea.webp" alt="Green Tea" style="width: 200px; height: 200px;">
-        <p>Antioxidant-rich green tea</p>
-        <p>Price: ₹75</p>
-        <button onclick="addToCart('Green Tea')">Add to Cart</button>
-    </div>
-    
-    <div class="product-card" data-category="beverages">
-        <h3>MINERAL WATER</h3>
-         <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\WATER BOTTLE.jfif" alt="MINERAL WATER" style="width: 200px; height: 200px;">
-        <p>FRESH MINERAL WATER</p>
-        <p>Price: ₹15/BOTTLE</p>
-        <button onclick="addToCart('FRESH MINERAL WATER')">Add to Cart</button>
-    </div>
+    <div class="cart-icon" onclick="showCart()">🛒</div>
 
+    <footer>
+        <p>© 2025 GreenMart. All rights reserved.</p>
+    </footer>
 
-<div class="product-card" data-category="beverages">
-        <h3>COKE</h3>
-         <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\COKE.jfif" alt="COKE" style="width: 200px; height: 200px;">
-        <p>REFRESHING COKE</p>
-        <p>Price: ₹30/CAN</p>
-        <button onclick="addToCart('COKE')">Add to Cart</button>
-    </div>
-
-
-<div class="product-card" data-category="beverages">
-        <h3>GOLI-SODA</h3>
-         <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\GOLI-SODA.jfif" alt="GOLI-SODA" style="width: 200px; height: 200px;">
-        <p>REFRESHING SODA </p>
-        <p>Price: ₹15/BOTTLE</p>
-        <button onclick="addToCart('GOLI-SODA')">Add to Cart</button>
-    </div>
-
-
-<div class="product-card" data-category="beverages">
-        <h3>COFFEE-BEANS</h3>
-         <img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\COFFEE.jfif" alt="COFFEE" style="width: 240px; height: 200px;">
-        <p>PURE COFFEE BEANS</p>
-        <p>Price: ₹50/KG</p>
-        <button onclick="addToCart('COFFEE-BEANS')">Add to Cart</button>
-    </div>
-
-    <div class="product-card" data-category="snacks">
-        <h3>Almond Cookies</h3>
-<p>Gluten-free almond cookies</p>
-<p>Price: ₹200</p>
-<button onclick="addToCart('Almond Cookies')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="produce">
-<h3>Fresh Apples</h3>
-<img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\apples.jfif" alt="FRESH APPLES" style="width: 220px; height: 200px;">
-<p>Organic Kashmiri apples</p>
-<p>Price: ₹120/kg</p>
-<button onclick="addToCart('Fresh Apples')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="produce">
-<h3>MANGOES</h3>
-<img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\mango.jfif" alt="MANGOES" style="width: 220px; height: 200px;">
-<p>FRESH EXOTIC MANGOES</p>
-<p>Price: ₹150/kg</p>
-<button onclick="addToCart('Fresh MANGOES')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="produce">
-<h3>ORANGE</h3>
-<img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\oranges.jfif" alt="ORANGES" style="width: 220px; height: 200px;">
-<p>FRESH ORANGES</p>
-<p>Price: ₹60/kg</p>
-<button onclick="addToCart('ORANGES')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="produce">
-<h3>BANANA</h3>
-<img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\banana.jpg" alt="BANANA" style="width: 220px; height: 200px;">
-<p>FRESH BANANAS</p>
-<p>Price: ₹60/KG</p>
-<button onclick="addToCart('BANANA')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="produce">
-<h3>Pomegranate</h3>
-<img src="C:\Users\2395461\OneDrive - Cognizant\Pictures\picturess\pomegranate.jfif" alt="Pomegranate" style="width: 220px; height: 200px;">
-<p>FRESH Pomegranate</p>
-<p>Price: ₹50/KG</p>
-<button onclick="addToCart('Pomegranate')">Add to Cart</button>
-</div>
-
-<div class="product-card" data-category="frozen">
-<h3>Veggie Mix</h3>
-<p>Frozen vegetable mix</p>
-<p>Price: ₹250</p>
-<button onclick="addToCart('Veggie Mix')">Add to Cart</button>
-</div>
-</div>
-<div class="cart-icon" onclick="showCart()">🛒</div>
-
-<footer>
-<p>© 2025 GreenMart. All rights reserved.</p>
-</footer>
-    
+    <script src="main.js"></script>
 </body>
+
 </html>
